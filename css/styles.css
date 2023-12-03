@@ -792,8 +792,9 @@ opacity: 1;
                 color: #FFFFFF;
                 font-size: 16px;
                 font-weight: 500;
-                line-height: 1.5px;
+                line-height: 1.5;
                 letter-spacing: 0.04em;
+                cursor: pointer;
         }
 
 .footer-form-btn-icon {
