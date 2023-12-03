@@ -607,8 +607,9 @@ color: #2E2F42;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
-letter-spacing: -0.02em;
+letter-spacing: 0.02em;
 margin-bottom: 16px;
+text-align: center;
 }
  .review-form-input {
     width: 100%;
@@ -618,7 +619,7 @@ margin-bottom: 16px;
     background-color: transparent;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    outline: 0px sold transparent;
+    outline: transparent;
 }
 
 
@@ -641,16 +642,20 @@ margin-bottom: 16px;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
     display: block;
+    line-height: 1.17;
 }
 .review-form-input-wrapper {
     position: relative;
+    margin-bottom: 16px;
 }
 .review-form-input-icon {
     position: absolute;
     top: 8px;
     left: 16px;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .review-form-textarea-comment {
     height: 120px;
@@ -665,8 +670,9 @@ margin-bottom: 16px;
     color:  rgba(46, 47, 66, 0.40);
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
+    outline: transparent;
 }
 
 .review-form-textarea-comment::placeholder {
@@ -693,11 +699,13 @@ margin-bottom: 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox:checked + .review-form-checkbox-label > .review-form-span-checkbox {
-    background-color: #4D5AE5;
-    border-color: #4D5AE5;
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .review-form-checkbox:focus+.review-form-checkbox-label>.review-form-span-checkbox {
@@ -729,7 +737,7 @@ opacity: 1;
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 
