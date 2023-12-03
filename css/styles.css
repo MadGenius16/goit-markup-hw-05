@@ -653,7 +653,7 @@ text-align: center;
 }
 .review-form-input-wrapper {
     position: relative;
-    margin-bottom: 16px;
+ 
 }
 .review-form-input-icon {
     position: absolute;
@@ -690,12 +690,15 @@ text-align: center;
     border-color: #4D5AE5;
 }
 
+.review-form-checkbox{
+    margin-right: 8px;
+}
+
 .review-form-checkbox:checked {
     width: 16px;
     height: 16px;
-
-
 }
+
 
 .review-form-span-checkbox {
     display: inline-flex;
@@ -751,10 +754,12 @@ opacity: 1;
 
 .accent-color {
     color: #4D5AE5;
+    text-decoration: underline;
 }
 
 .review-form-checkbox-wrapper {
     margin-bottom: 24px;
+    
 }
 
 .review-form-btn {
@@ -815,26 +820,24 @@ opacity: 1;
     }
         .scribe-box-form-input::placeholder {
             color: #ffffff;
-        }
-        
-        
+        }        
         
         .footer-form-btn {
             display: flex;
-                padding: 8px 24px;
-                justify-content: center;
-                align-items: center;
-                border: none;
-                border-radius: 4px;
-                background: #4D5AE5;
-                min-width: 165px;
-                height: 40px;
-                color: #FFFFFF;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.5;
-                letter-spacing: 0.04em;
-                cursor: pointer;
+            padding: 8px 24px;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 4px;
+            background: #4D5AE5;
+            min-width: 165px;
+            height: 40px;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            cursor: pointer;
         }
 
 .footer-form-btn-icon {
